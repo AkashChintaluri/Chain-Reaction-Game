@@ -1,0 +1,7 @@
+public class ikbs
+{
+    public static void main()
+    {
+        System.out.print("9843 :"+(char)9843 + "     \n    "+"10102 :"+(char)10102);
+    }
+}

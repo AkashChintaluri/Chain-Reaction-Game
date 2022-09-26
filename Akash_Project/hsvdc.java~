@@ -1,0 +1,113 @@
+if(main[n][m] == 10104)
+                    {
+                        if(n-1 >=0 && m-1 >=0 && n+1<8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 <0 && m-1 >=0 && n+1<8 && m+1 <8)
+                        {
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 <0 && n+1<8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply1;
+                            main[n+1][m] = ply1;
+                            main[n][m+1] = ply1;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1>=8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1<8 && m+1 >=8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 <0 && m-1 <0 && n+1<8 && m+1 <8)
+                        {
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1>=8 && m+1 >=8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                    }
+                    else if(main[n][m]== ply2)
+                        main[n][m] = (char)10103;
+                    else if(main[n][m]== (char)10103)
+                        main[n][m] = (char)10104;
+                    else if(main[n][m] == 'e')
+                        main[n][m] = ply2;if(main[n][m] == 10104)
+                    {
+                        if(n-1 >=0 && m-1 >=0 && n+1<8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 <0 && m-1 >=0 && n+1<8 && m+1 <8)
+                        {
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 <0 && n+1<8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply1;
+                            main[n+1][m] = ply1;
+                            main[n][m+1] = ply1;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1>=8 && m+1 <8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1<8 && m+1 >=8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n+1][m] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 <0 && m-1 <0 && n+1<8 && m+1 <8)
+                        {
+                            main[n+1][m] = ply2;
+                            main[n][m+1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                        else if(n-1 >=0 && m-1 >=0 && n+1>=8 && m+1 >=8)
+                        {
+                            main[n-1][m] = ply2;
+                            main[n][m-1] = ply2;
+                            main[n][m] = 'e';
+                        }
+                    }
+                    else if(main[n][m]== ply2)
+                        main[n][m] = (char)10103;
+                    else if(main[n][m]== (char)10103)
+                        main[n][m] = (char)10104;
+                    else if(main[n][m] == 'e')
+                        main[n][m] = ply2;

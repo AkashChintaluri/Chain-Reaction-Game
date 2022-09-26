@@ -1,0 +1,189 @@
+import java.util.Scanner;
+public class Chain_Reaction_2
+{
+    static String user[] = new String[100];
+    static String pass[] = new String[100];
+    static String me[] = new String[100];
+    static int o = 0;
+    public static void main()
+    {
+        Scanner sc = new Scanner(System.in);
+        int choice = 0;
+        System.out.println("Are you an existing player or new to the game ?");
+        System.out.println("1. Existing");
+        System.out.println("2. New Player");
+        System.out.println("Please enter you choice as \"1\" or \"2\"");
+        choice = sc.nextInt();
+        if(choice == 1 )
+        {
+            for(int q = 0;q>-1; q++)
+            {
+                String user1 = "";
+                String pass1 = "";
+                if(q == 0)
+                {
+                    System.out.println("Please enter your username");
+                    user1 = sc.next();
+                    int check = 0;
+                    for(int l = 0; l<100; l++)
+                    {
+                        if(user1.equals(user[l]))
+                        {
+                            check = l;
+                        }
+                    }
+                    if(check>-1)
+                    {
+                        q = -2;
+                        for(int y= 0;y>-1;y++)
+                        {
+                            if(y==0)
+                                System.out.println("Please enter your password");
+                            pass1 = sc.next();
+                            if(pass1 == pass[check])
+                            {
+                                y = -2;
+                            }
+                            else
+                            {
+                                if(y>0 && y<6)
+                                    System.out.println("Enter proper password");
+                                else
+                                {
+                                    System.out.println("Did you forget your password ?");
+                                    System.out.println("1. Yes");
+                                    System.out.println("2. No");
+                                    System.out.println("Please enter you choice as \"1\" or \"2\"");
+                                    int as = sc.nextInt();
+                                    for(int p = 0;p>-1;p++)
+                                    {
+                                        if(as == 1)
+                                        {
+                                            System.out.println("Please enter your email or password which you used during creation of your Account");
+                                            String me1 = sc.next();
+                                            if(me1 == me[check])
+                                            {
+                                                System.out.println("What would you like your new password to be ?");
+                                                pass1 = sc.next();
+                                                pass[check] = pass1;
+                                                System.out.println("Your new password is set");
+                                                System.out.println("Please remember your password");
+                                                p = -2;
+                                            }
+                                            else 
+                                            {
+                                                System.out.println("Enter proper details................. Please check the case");
+                                            }
+                                        }
+                                        else
+                                            System.out.println("Enter proper password");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        System.out.println("Such username does not exist");
+                        System.out.println("Please enter proper username");
+                        System.out.println("Else enter \"noaccount\"");
+                        String ty = sc.next();
+                        if(ty.equalsIgnoreCase("noaccount"))
+                        {
+                            System.out.println("Welcome to THE CHAIN REACTION GAME.....");
+                            System.out.println("As you are new to the game, you will have to create your own account to play");
+                            System.out.println("Please enter the username you want to play with ...........");
+                            user[o] = sc.next();
+                            System.out.println("Please enter the password you would like to set");
+                            System.out.println("Important : you will need the password to access your account later"); 
+                            pass[o] = sc.next();
+                            System.out.println("Please enter your mobile number or email address to continue");
+                            me[o] = sc.next();
+                            System.out.print("\f");
+                        }
+                        else
+                        {
+                            user1 = sc.next();
+                            int check2 = 0;
+                            for(int l = 0; l<100; l++)
+                            {
+                                if(user1.equals(user[l]))
+                                {
+                                    check2 = l;
+                                }
+                            }
+                            if(check2>-1)
+                            {
+                                q = -2;
+                                for(int y= 0;y>-1;y++)
+                                {
+                                    if(y >0)
+                                    {
+                                        System.out.println("Please enter your proper password");
+                                        pass1 = sc.next();
+                                    }
+                                    else
+                                    {
+                                        System.out.println("Please enter your password");
+                                        pass1 = sc.next();
+                                    }
+                                    if(y>5)
+                                    {
+                                        System.out.println("Did you forget your password ?");
+                                        System.out.println("1. Yes");
+                                        System.out.println("2. No");
+                                        System.out.println("Please enter you choice as \"1\" or \"2\"");
+                                        int as = sc.nextInt();
+                                        for(int p = 0;p>-1;p++)
+                                        {
+                                            if(as == 1)
+                                            {
+                                                System.out.println("Please enter your email or password which you used during creation of your Account");
+                                                String me1 = sc.next();
+                                                if(me1 == me[check2])
+                                                {
+                                                    System.out.println("What would you like your new password to be ?");
+                                                    pass1 = sc.next();
+                                                    pass[check2] = pass1;
+                                                    System.out.println("Your new password is set");
+                                                    System.out.println("Please remeber your password");
+                                                    p = -2;
+                                                }
+                                                else 
+                                                {
+                                                    System.out.println("Enter proper details................. Please check the case");
+                                                }
+                                            }
+                                        }
+                                    }
+                                    if(pass1 == pass[check2])
+                                        y = -2;
+                                }
+                            }
+                            else
+                            {
+                                System.out.println("Such username does not exist");
+                                System.out.println("You are unauthorized");
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            System.out.println("Welcome to THE CHAIN REACTION GAME.....");
+            System.out.println("As you are new to the game, you will have to create your own account to play");
+            System.out.println("Please enter the username you want to play with ...........");
+            user[o] = sc.next();
+            System.out.println("Please enter the password you would like to set");
+            System.out.println("Important : you will need the password to access your account later"); 
+            pass[o] = sc.next();
+            System.out.println("Please enter your mobile number or email address to continue");
+            me[o] = sc.next();
+            System.out.print("\f");
+        }
+        o++;
+    }
+}

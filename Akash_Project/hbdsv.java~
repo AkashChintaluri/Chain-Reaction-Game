@@ -1,0 +1,10 @@
+public class hbdsv
+{
+    public static void main(int l,int j)
+    {
+        for(int i = l; i<=j; i++)
+        {
+            System.out.println(i+" "+(char)i);
+        }
+    }
+}

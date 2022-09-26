@@ -1,0 +1,4 @@
+ int n1 = (int)(Math.random()*7);
+                int m1 = (int)(Math.random()*7);
+                int n2 = (int)(Math.random()*7);
+                int m2 = (int)(Math.random()*7);

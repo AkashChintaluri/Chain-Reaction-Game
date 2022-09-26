@@ -1,0 +1,11 @@
+public class owubnre
+{
+    public static void main (int j, int l)
+    {
+        
+        for(int i = j; i <= l; i++)
+        {
+            System.out.println(i+ " "+ ((char)i));
+        }
+    }
+}

@@ -1,0 +1,6 @@
+public class ashb
+{
+    public static void main()
+    {
+        System.out.print("My name is Akash");
+    }

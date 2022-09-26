@@ -1,0 +1,14 @@
+public class tech
+{
+    public static void main()
+    {
+        for(int i = 1000;i<=9999;i++)
+        {
+            int ad = i%100;
+            int gh = i/100;
+            
+            if(ch == i)
+                System.out.println(i+" is a Tech Number");
+        }
+    }
+}

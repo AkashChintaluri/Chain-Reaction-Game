@@ -1,0 +1,7 @@
+public class isgkv
+{
+    public static void main()
+    {
+        System.out.println((char)741);
+    }
+    

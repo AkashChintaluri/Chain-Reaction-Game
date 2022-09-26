@@ -1,0 +1,6 @@
+if(g>=main[n-1][m])
+                            {
+                                int d = g-10112;
+                                int v = (int)main[n-1][m];
+                            main[n-1][m] = (char)(v+d);
+                        }

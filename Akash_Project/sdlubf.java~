@@ -1,0 +1,7 @@
+public class sdlubf
+{
+    public static void main()
+    {
+        System.out.println((char)'a');
+    }
+}

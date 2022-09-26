@@ -1,0 +1,8 @@
+public class vsjd
+{
+    public static void main()
+    {
+        for(int i = 95;i<=150;i++)
+        
+    }
+}

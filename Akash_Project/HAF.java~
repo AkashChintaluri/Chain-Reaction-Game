@@ -1,0 +1,18 @@
+ char l = main[n-1][m];
+                            char q = main[n][m-1];
+                            char z = main[n+1][m];
+                            char x = main[n][m+1];
+                            main[n-1][m] = ply1;
+                            main[n][m-1] = ply1;
+                            main[n+1][m] = ply1;
+                            main[n][m+1] = ply1;
+                            main[n][m] = 'e';
+                            if(l == main[n-1][m])
+                            {
+                            main[n-1][m] = (char)(((int)main[n-1][m])+1);
+                            if(l == main[n][m-1])
+                            main[n][m-1] = (char)(((int)main[n][m-1])+1);
+                            if(l == main[n+1][m])
+                            main[n+1][m] = (char)(((int)main[n+1][m])+1);
+                            if(l == main[n][m+1])
+                            main[n][m+1] = (char)(((int)main[n][m+1])+1);

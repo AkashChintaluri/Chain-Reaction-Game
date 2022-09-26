@@ -1,0 +1,9 @@
+public class skvbfs
+{
+    public static void main()
+    {
+        String na = "wisdom";
+        char ch = na.substring(0,1);
+        System.out.print(ch);
+    }
+    

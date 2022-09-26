@@ -1,0 +1,9 @@
+public class zoduvb
+{
+    public static void main()
+    {
+        int num = 3025;
+        int ad = num%100;
+        System.out.println("% : "+ad);
+    }
+}
